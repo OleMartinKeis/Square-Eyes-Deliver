@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3191688,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Order premium amateur movies, and support local artists.">
+    <script src="https://kit.fontawesome.com/8b2b4ce3ac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Square Eyes | Order now</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo"><img src="/images/SquareEyes_Logo.png" alt="Logo for the website." class="logo">
-        <nav>
-            <ul>
-                <li><a href="about.html"><img src="/images/Icon material-account-circle.png" alt="My account" class="myaccount"></a></li>
-                <li><a href="search.html"><img src="/images/Movie Search.png" alt="Search-buttton" class="search"></a></li>
-                <li><a href="genres.html"><img src="/images/Icon map-movie-theater.png" alt="movies-button" class="browsemovies"></a></li>
-                <li><a href="order.html"><img src="/images/Icon metro-cart.png" alt="Shopping cart" class="shoppingcart"></a></li>
+            <ul class="navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="myaccount.html">My Account</a></li>
             </ul>
-        </nav>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
     </header>
     <main>
-        <section class="ticket__checkbox">
-            <div class="ticket__choice">
-                <label class="checkbox" for="myCheckboxID">
-                    <input type="checkbox" class="checkbox__input" name="ticket__choice" id="myCheckboxID">
-                    <div class="checkbox__box"></div>1 Movie, 2.99$
+        <section class="form_container" method="get">
+            <h1>Heello there</h1>
+            <form action="#">
+                <label>First name:
+                    <input type="text" id="fname" name="fname">
                 </label>
-            </div>
-            <div class="ticket__choice__2">
-                <label class="checkbox__2" for="myCheckboxID2">
-                    <input type="checkbox" class="checkbox__input__2" name="ticket__choice__2" id="myCheckboxID2">
-                    <div class="checkbox__box__2"></div>10 Movies, 26.99$
+                <div class="form-error" id="firstNameError">Please enter your first name</div>
+
+                <label>Last name:
+                    <input type="text" id="lname" name="lname">
                 </label>
-            </div>
+                <div class="form-error" id="lastNameError">Please enter your last name</div>
+
+                <label>Email address;
+                    <input type="text" id="emailaddress" name="emailaddress">
+                </label>
+                <div class="form-error" id="emailError">Your last name must be at least 4 characters</div>
+
+                <label>Credit Card:
+                    <input type="text" id="cc" name="cc">
+                </label>
+                <div class="form-error" id="ccError">Your credit card must be between 13 and 20 characters long</div>
+
+                <label>CVV:
+                    <input type="text" id="cvv" name="cvv">
+                </label>
+                <div class="form-error" id="cvvError">Your cvv can't be longer than 3 characters.</div>
+
+                <button>Submit</button>
+            </form>
         </section>
-        <section class="container__order">
-            <div class="contact-box__order">
-                <div class="left__order"></div>
-                <div class="right__order">
-                    <h2 class="h2__order">Order Now</h2>
-                    <input type="text" class="field" placeholder="First Name">
-                    <input type="text" class="field" placeholder="Last Name">
-                    <input type="text" class="field" placeholder="Billing Adress">
-                    <input type="text" class="field" placeholder="Zip Code">
-                    <input type="text" class="field" placeholder="Credit Card Number">
-                    <input type="text" class="field" placeholder="CVV">
-                    <button class="contact__btn">Order Now</button>
-                </div>
-            </div>
-        </section>
+        <script src="/js/form.js"></script>
     </main>
 </body>
 </html>

@@ -38,7 +38,7 @@ header .navigation {
 }
 
 .navigation li a {
-    color: #707070;
+    color: black;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 1px;
@@ -97,6 +97,14 @@ header .navigation {
         left: 5%;
     }
 
+    .search {
+        max-width: 500px;
+        padding: 5px;
+    }
+
+    .navigation li a {
+        padding: 10px 1px 10px ;
+    }
 }
 
 @media (min-width:800px){
@@ -248,6 +256,11 @@ img  {
     background-size: 55em;
     background-position: 50% 3%;
 }
+
+.genres__main li {
+    padding-top: 25px;
+}
+
  .watched__films,  .rated__films {
     display: inline-block;
     margin-top: 12%;
@@ -270,13 +283,12 @@ img  {
     text-align:center;
     font-size: 25px;
     font-weight: 700;
-    color: #F2F2F2;
+    color: #EFE1C4;
 }
 
 .column {
     position: relative;
     bottom: 0px;
-    ;
 }
 
 .action {
@@ -311,8 +323,8 @@ img  {
 .form_container {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 60%; 
+    max-width: 700px;
+    max-height: 60%; 
     margin: 0 auto;
     margin-top: 15%;
     padding: 2em;
@@ -321,10 +333,14 @@ img  {
 }
 
 form input {
+    max-width: 400px;
+    display: flex;
+    margin: 0 auto;
     width: 100%;
     margin-top: 2px;
     padding: 10px;
     font-size: 16px;
+    height: 40px;
 }
 
 form button {
@@ -346,10 +362,31 @@ form label {
     margin-top: 2em;
 }
 
+#cc {
+ max-width: 400px;
+ display: flex;
+ margin: 0 auto;
+}
+
+#cc input{
+    margin: 0 auto;
+}
+
+#cvv {
+    width: 55px;
+}
+
+@media (max-width:800px) {
+    form button {
+        max-width: 150px;
+    }
+}
+
 .form-error {
     display: none;
     color: red;
-    font-size: 0.9rem;
+    font-size: 1em;
+    font-weight: 600;
     margin-top: 2px;
 }
 /* Contact page*/

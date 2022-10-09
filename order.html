@@ -35,9 +35,9 @@
             </form>
     </header>
     <main>
-        <section class="form_container" method="get">
-            <h1>Heello there</h1>
-            <form action="#">
+        <section class="form_container">
+            <h1>Order your movie</h1>
+            <form action="#" class="order_form" method="get">
                 <label>First name:
                     <input type="text" id="firstName" name="firstName">
                 </label>
@@ -48,25 +48,27 @@
                 </label>
                 <div class="form-error" id="lastNameError">Please enter your last name</div>
 
-                <label>Email address;
+                <label>Email address:
                     <input type="text" id="emailaddress" name="emailaddress">
                 </label>
-                <div class="form-error" id="emailError">Your last name must be at least 4 characters</div>
+                <div class="form-error" id="emailError">Please enter a valid email address.</div>
 
-                <label>Credit Card:
-                    <input type="text" id="cc" name="cc">
-                </label>
-                <div class="form-error" id="ccError">Your credit card must be between 13 and 20 characters long</div>
+                <div class="cc_and_cvv">
+                    <label>Credit Card:
+                        <input type="text" id="cc" name="cc">
+                    </label>
+                    <div class="form-error" id="ccError">Your credit card must be between 13 and 20 characters long</div>
 
-                <label>CVV:
-                    <input type="text" id="cvv" name="cvv">
-                </label>
-                <div class="form-error" id="cvvError">Your cvv can't be longer than 3 characters.</div>
+                    <label>CVV:
+                        <input type="text" id="cvv" name="cvv">
+                    </label>
+                    <div class="form-error" id="cvvError">Your cvv can't be longer than 3 characters.</div>
+                </div>
 
                 <button>Submit</button>
             </form>
         </section>
-        <script src="/js/form.js"></script>
     </main>
+    <script src="/js/form.js"></script>
 </body>
 </html>

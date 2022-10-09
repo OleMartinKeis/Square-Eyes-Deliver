@@ -1,4 +1,4 @@
-const form = document.querySelector("form.container")
+const form = document.querySelector(".order_form")
 const firstName = document.querySelector("#firstName");
 const firstNameError = document.querySelector("#firstNameError");
 const lastName = document.querySelector("#lastName");
@@ -11,10 +11,11 @@ const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvvError");
 
 
-form.onsubmit = function() {
+function validateForm() {
+
     event.preventDefault();
 
-    if (checkLength(firstName.value, 0) === true) {
+    if (checkLength(firstName.value, 2) === true) {
         firstNameError.style.display = "none";
     } else {
         firstNameError.style.display = "block";
@@ -32,18 +33,20 @@ form.onsubmit = function() {
         emailError.style.display = "block";
     }
 
-    if (checkLength(cc.value, 3) === true) {
+    if (checkLength(cc.value, 13, 20) === true) {
         ccError.style.display = "none";
     } else {
         ccError.style.display = "block";
     }
 
-    if (validateEmail(cvv.value) === true) {
+    if (validateEmail(cvv.value, 3) === true) {
         cvvError.style.display = "none";
     } else {
         cvvError.style.display = "block";
     }
 
+
+    console.log("asda")
 }
 
 

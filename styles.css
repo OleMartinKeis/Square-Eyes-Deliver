@@ -138,8 +138,12 @@ header .navigation {
     min-height: 40em;
     background-position: 20% 20%;
     max-width: 100%;
-    margin-top: 18em;
-    
+    margin-top: 3em;
+}
+
+.text-block {
+    border-radius: 15px;
+    border: 2px solid #707070;
 }
 
 .text-block{
@@ -197,9 +201,10 @@ img  {
 }
 
 .search_box {
+    top: 30%;
     background: #F2F2F2;
     position: relative;
-    border-radius: 2em;
+    border-radius: 4em;
     display: flex;
     margin-right: 10px; 
     align-items: center;
@@ -219,18 +224,24 @@ img  {
     outline: none;
     border: 0;
     padding: 1.5em 5em;
-    width: 9em;
+    width: 19em;
     height: 2em;
     border-radius: 5em;
     text-align: center;
 }
 
 .movie__search__text {
-    top: 35%;
+    margin-left: 25%;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 50%;
+    border: 2px solid #707070;
+    background-color: #EFE1C4;
+    top: 50%;
     position: absolute;
-   z-index: 6;
+    z-index: 6;
     width: 100%;
-    color: #F2F2F2;
+    color: black;
 }
 
 .search__picture {
@@ -239,6 +250,7 @@ img  {
     width: 100%;
     top: 18%;
     border-radius: 5%;
+    filter: blur(5px);
 }
 
 @media (min-width:800px){
@@ -247,6 +259,15 @@ img  {
         width: 100em;
         height: auto;
     }
+    
+}
+
+@media (max-width: 800px) {
+
+    .movie__search__text{
+        margin-top: -300px;
+    }
+
 }
 
 /* Genres Page */
@@ -315,6 +336,13 @@ img  {
     margin-top: 5%;
 }
 
+}
+
+/* About page*/
+
+.about_text {
+    text-align: left;
+    padding: 2em;
 }
 
     
@@ -389,11 +417,12 @@ form label {
     font-weight: 600;
     margin-top: 2px;
 }
+
 /* Contact page*/
 
 .container__2{
     margin-top: 5%;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -517,4 +546,19 @@ form label {
     padding-right: 70px;
     }
 
+}
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: left;
+    background-color: #EFE1C4;
+}
+
+footer h3 {
+    padding: 15px;
 }

@@ -14,10 +14,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="An overview of all the genres at Square Eyes.">
+    <title>Movie Details</title>
     <script src="https://kit.fontawesome.com/8b2b4ce3ac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Square Eyes | Genres</title>
 </head>
 <body>
     <header>
@@ -34,49 +33,15 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
     </header>
-    <main class="genres__main">
-        <div class="rating_container">
-            <img src="/images/Image 5.png" alt="picture of a old film machine">
-            <div class="watched__films">
-                <h2>Top 5 most watched films</h2>
-                <ol>
-                    <li><p>The Neighborhood</p></li>
-                    <li><p>School</p></li>
-                    <li><p>Friday the 14th</p></li>
-                    <li><p>Sharks</p></li>
-                    <li><p>Chasers</p></li>
-                </ol>
-            </div>
-            <div class="rated__films">
-                <h2>Top 5 highest rated films</h2>
-                <ol>
-                    <li><p>The Neighborhood</p></li>
-                    <li><p>School</p></li>
-                    <li><p>Friday the 14th</p></li>
-                    <li><p>Sharks</p></li>
-                    <li><p>Chasers</p></li>
-                </ol>   
-            </div>
-        </div>
-        <h2>Available movies</h2>
-        <div class="movies_container">
+    <main>
+        <div class="movie-details">
             <div class="loader-container">
-                <div class="loader"></div>
-            <div class="category_select">
-                <label for="">Categories:</label>
-                <select class="movie_select">
-                    <option value="movies_select">All movies</option>
-                    <option value="drama_select">Drama</option>
-                    <option value="comedy_select">Comedy</option>
-                    <option value="horror_select">Horror</option>
-                </select>
-            </div>
-
+                <div class="loader">
             </div>
         </div>
     </main>
     <script src="js/components/error.js"></script>
-    <script src="js/fetchMovies.js"></script>
+    <script src="js/fetchDetails.js"></script>
     <footer>
         <a href="contact.html"><h3>Contact us</h3></a>
         <a href="about.html"><h3>About us</h3></a>
